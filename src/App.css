@@ -1,38 +1,79 @@
-.App {
-  text-align: center;
+.body{
+    background: rgb(85,164,230);
+    background: linear-gradient(90deg, rgba(57,75,226,1) 21%,rgba(85,164,230,1)  79%);
+    height: 100%;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.card-price{
+    font-size: 20px;
+    font-weight: bolder;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.period{
+    font-size: small;
+    font-weight: normal;
+}
+
+.fa-li{
+    padding-top: 5px;
+}
+
+.fa-times{
+    color: red;
+}
+
+.fa-check{
+    color: green;
+}
+
+.button-1{
+    border-radius: 50px;
+}
+
+.card{
+    border-radius: 20px;
+    box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.1);
+}
+.card-price{
+    font-size: larger;
+}
+
+.card-title{
+    font-size: larger;
+    font-weight: bolder;
+
+}
+
+.card-label{
+    font-size: 50px;
+}
+
+.period{
+    font-size: 50px;
+}
+
+
+
+.times-content {
+    opacity: 0.5; /* Adjust opacity as needed */
+}
+
+
+.times-span + .next-span {
+    opacity: 0.7; /* Adjust opacity as needed */
+}
+
+@media (min-width: 992px) {
+    .body .card:hover {
+      margin-top: -20px;
+      margin-bottom: .250rem;
+      box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.3);
+    }
+  
+    .body .card:hover .btn {
+      opacity: 1;
+    }
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
